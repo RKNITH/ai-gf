@@ -32,7 +32,7 @@ export async function chat(req, res) {
             }
         };
 
-        const model = process.env.GEMINI_MODEL || "gemini-1.5-flash";
+        const model = "gemini-2.0-flash";
         const url = `${GEMINI_BASE}/${model}:generateContent`;
 
         const response = await axios.post(url, payload, {
